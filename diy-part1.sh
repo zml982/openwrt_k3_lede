@@ -22,5 +22,5 @@ sed -i '3a iwconfig wlan0 txpower 24' package/base-files/files/etc/rc.local
 sed -i '4a iwconfig wlan1 txpower 24' package/base-files/files/etc/rc.local
 #git clone https://github.com/aswifi/luci-theme-atmaterial_new package/lean/luci-theme-atmaterial_new
 #sed -i 's/luci-theme-bootstrap/luci-theme-atmaterial_new/g' feeds/luci/collections/luci/Makefile
-#sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm-k3|TARGET_DEVICES += phicomm-k3| ; s|# TARGET_DEVICES += phicomm_k3|TARGET_DEVICES += phicomm_k3|' target/linux/bcm53xx/image/Makefile
+sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm-k3|TARGET_DEVICES += phicomm-k3| ; s|# TARGET_DEVICES += phicomm_k3|TARGET_DEVICES += phicomm_k3|' target/linux/bcm53xx/image/Makefile
 
